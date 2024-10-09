@@ -1,0 +1,225 @@
+.header {
+  /* min-height: 370px; */
+  height: 370px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+}
+.background {
+  width: 100%;
+  position: absolute;
+}
+.header h2 {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.header h2 span {
+  color: #61ae4b;
+}
+
+@media screen and (max-width: 1024px) {
+  .header h2 {
+    font-size: 30px;
+  }
+}
+
+/* membership */
+.contactform {
+  background: #f8fff6;
+  padding: 50px 0px;
+}
+.contactform form {
+  width: 60%;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contactform form h3 {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.contactform form button {
+  background: #61ae4b;
+  border-radius: 10px;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 10px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.contactform form .feildRow {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.contactform form .messageBox {
+  width: 100%;
+  display: flex;
+}
+.contactform form .messageBox .input {
+  width: 100%;
+}
+.contactform form .messageBox .input textarea {
+  height: 30vh;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border: none;
+  resize: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 9px 16px;
+}
+.contactform form .feildRow .input {
+  width: 50%;
+}
+.contactform form .feildRow .input input {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border: none;
+  height: 42px;
+  padding: 9px 16px;
+}
+.contactform form .feildRow .input input::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #837f7f;
+}
+.contactform form .messageBox .input textarea::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #837f7f;
+}
+
+@media screen and (max-width: 1024px) {
+  .contactform form .feildRow .input input::placeholder {
+    font-size: 14px;
+  }
+  .contactform form h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contactform form h3 {
+    font-size: 14px;
+  }
+  .contactform form .feildRow .input input::placeholder {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .contactform form {
+    width: 80%;
+  }
+  .contactform form .feildRow {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contactform form .feildRow .input {
+    width: 100%;
+  }
+}
+.subscribtion {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.subscribtion h2 {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #444444;
+}
+.subscribtion input {
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  height: 78px;
+  outline: none;
+  padding: 0px 23px;
+}
+.subscribtion input::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #c4c4c4;
+}
+.subscribtion button {
+  background: #61ae4b;
+  border-radius: 10px;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 10px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .subscribtion h2 {
+    font-size: 20px;
+  }
+  .subscribtion input::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .subscribtion {
+    gap: 50px;
+  }
+  .subscribtion h2 {
+    font-size: 16px;
+  }
+  .subscribtion input {
+    width: unset;
+    height: 55px;
+  }
+}
+
+
+@media screen and (max-width: 769px) {
+  .subscribtion{
+    width: 90%;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+

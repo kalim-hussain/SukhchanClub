@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.container {
+  width: 90%;
+  display: flex;
+  margin: 0% auto;
+}
+@media screen and (max-width: 769px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1400px;
+  }
+}
+.trainerMain {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.trainerMain h2 {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #444444;
+}
+.trainerMain h2 span {
+  color: #61ae4b;
+}
+.trainerMain p {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #444444;
+}
+.cardContainer {
+  background: #f8fff6;
+  padding: 50px 0px;
+}
+.cardContainer .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.cardContainer .trainerCard {
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+  gap: 16px;
+  margin: 10px 0px;
+}
+.cardContainer .trainerCard .image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+.cardContainer .trainerCard .image .trainerImg {
+  width: 100%;
+  height: 100%;
+  transition: .7s;
+}
+.cardContainer .trainerCard .image:hover .trainerImg {
+  transform: scale(1.1);
+}
+.cardContainer .trainerCard span {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  padding-left: 5px;
+}
+
+.cardContainer .trainerCard .icon {
+  padding-left: 5px;
+}
+.cardContainer .trainerCard p {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #444444;
+  padding-left: 5px;
+}
+ 
+@media screen and (max-width: 769px) {
+  .trainerMain p {
+    text-align: justify;
+    font-size: 14px;
+  }
+}

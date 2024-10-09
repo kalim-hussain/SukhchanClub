@@ -1,0 +1,259 @@
+.container {
+  width: 91%;
+  display: flex;
+  margin: 0% auto;
+}
+@media screen and (max-width: 769px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .container {
+    width: 1400px;
+  }
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.header .background {
+  width: 100%;
+  height: 657px;
+}
+.header h2 {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+}
+.header h2 span {
+  color: #61ae4b;
+}
+.header p {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+}
+.header p span {
+  color: #61ae4b;
+}
+
+@media screen and (max-width: 1024px) {
+  .header h2 {
+    font-size: 25px;
+  }
+  .header p {
+    font-size: 20px;
+  }
+}
+.dhacards {
+  position: relative;
+  height: 491.45px;
+}
+.dhacards .imgBackground {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.dhacards.color {
+  background: #F8FFF6;
+}
+.dhacards .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px 0px;
+}
+.dhacards .content .innerImg {
+  width: 375px;
+  height: 391.45px;
+}
+.dhacards .content h3 {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  color: #ffffff;
+}
+.dhacards .content p {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+.dhacards:nth-child(even) .content {
+  flex-direction: row-reverse;
+}
+.dhacards.backgroundColor .content h3,
+.dhacards.backgroundColor .content p {
+  color: #444444;
+}
+
+@media screen and (max-width: 1024px) {
+  .dhacards .content .innerImg {
+    width: 344px;
+    height: 264.45px;
+  }
+  .dhacards .content h3 {
+    font-size: 20px;
+  }
+  .dhacards .content p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .dhacards .content .innerImg {
+    width: 270px;
+    /* height: 264.45px; */
+  }
+  .dhacards {
+    height: 600px;
+  }
+  .dhacards.backgroundColor,
+  .dhacards.color {
+    height: 600px;
+  }
+  .dhacards .content,
+  .dhacards.backgroundColor .content,
+  .dhacards.color .content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .dhacards:nth-child(even) .content {
+    flex-direction: column;
+  }
+}
+/* membership */
+.Subscriptionform {
+  background: #f8fff6;
+  padding: 50px 0px;
+}
+.Subscriptionform form {
+  width: 80%;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.Subscriptionform form h3 {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.Subscriptionform form h3 span {
+  color: #61ae4b;
+}
+.Subscriptionform form p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #444444;
+}
+.Subscriptionform form button {
+  width: 33%;
+  background: #61ae4b;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.Subscriptionform form .feildRow {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.Subscriptionform form .feildRow .input {
+  width: 33%;
+  position: relative !important;
+}
+.Subscriptionform form .feildRow .input input {
+  width: 100%;
+  background: #61ae4b;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border: none;
+  height: 42px;
+  padding: 9px 16px;
+}
+.Subscriptionform form .feildRow .input input::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #ffffff;
+}
+.Subscriptionform form .feildRow .input .dhaIcon {
+  position: absolute;
+  top: 23%;
+  right: 14px;
+}
+@media screen and (max-width: 1024px) {
+  .Subscriptionform form .feildRow .input input::placeholder {
+    font-size: 14px;
+  }
+  .Subscriptionform form h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .Subscriptionform form h3 {
+    font-size: 14px;
+  }
+  .Subscriptionform form .feildRow .input input::placeholder {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .Subscriptionform form {
+    width: 80%;
+  }
+  .Subscriptionform form .feildRow {
+    width: 100%;
+    flex-direction: column;
+  }
+  .Subscriptionform form button {
+    width: 100%;
+  }
+  .Subscriptionform form .feildRow .input {
+    width: 100%;
+  }
+}

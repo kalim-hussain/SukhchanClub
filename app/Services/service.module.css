@@ -1,0 +1,132 @@
+.container {
+  width: 83%;
+  display: flex;
+  margin: 0% auto;
+}
+@media screen and (max-width: 769px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1400px;
+  }
+}
+.servicesMain {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.servicesMain h2 {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #444444;
+}
+.servicesMain h2 span {
+  color: #61ae4b;
+}
+.servicesMain p {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #444444;
+}
+
+@media screen and (max-width: 769px) {
+  .servicesMain p {
+    text-align: justify;
+    font-size: 14px;
+  }
+}
+.Servicecards {
+  position: relative;
+  height: 491.45px;
+}
+.Servicecards .imgBackground {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.Servicecards.color {
+  background: #f8fff6;
+}
+.Servicecards .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px 0px;
+}
+.Servicecards .content .innerImg {
+  width: 375px;
+  height: 391.45px;
+}
+.Servicecards .content h3 {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+.Servicecards .content p {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+.Servicecards:nth-child(even) .content {
+  flex-direction: row-reverse;
+}
+.Servicecards.backgroundColor .content h3,
+.Servicecards.backgroundColor .content p {
+  color: #444444;
+}
+
+@media screen and (max-width: 1024px) {
+  .Servicecards .content .innerImg {
+    width: 344px;
+    height: 264.45px;
+  }
+  .Servicecards .content h3 {
+    font-size: 20px;
+  }
+  .Servicecards .content p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .Servicecards {
+    height: 600px;
+  }
+  .Servicecards.backgroundColor,
+  .Servicecards.color {
+    height: 600px;
+  }
+  .Servicecards .content,
+  .Servicecards.backgroundColor .content,
+  .Servicecards.color .content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .Servicecards:nth-child(even) .content {
+    flex-direction: column;
+  }
+}

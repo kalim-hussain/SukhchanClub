@@ -1,0 +1,24 @@
+{
+  "name": "shukchain",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.4",
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "serialize-javascript": "^6.0.1",
+    "sharp": "^0.32.3",
+    "swiper": "^9.3.2"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
+  }
+}

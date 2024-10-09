@@ -1,0 +1,95 @@
+.container {
+  width: 83%;
+  display: flex;
+  margin: 0% auto;
+}
+@media screen and (max-width: 769px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1400px;
+  }
+}
+.messageContent {
+  display: flex;
+  align-items: center;
+  gap: 69px;
+  padding: 50px 0px;
+}
+
+.messageContent .innerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 60%;
+}
+.messageContent .innerImage {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.messageContent .innerImage .aboutImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.messageContent .innerContent h2 {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #444444;
+}
+.messageContent .innerContent span {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #444444;
+}
+.messageContent .innerContent p {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  color: #444444;
+}
+.messageContent .innerContent a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.messageContent .innerContent a span {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  color: #61ae4b;
+}
+@media screen and (max-width: 1024px) {
+  .messageContent .innerContent h2 {
+    font-size: 18px;
+  }
+  .messageContent .innerContent span {
+    font-size: 14px;
+  }
+  .messageContent .innerContent p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .messageContent {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .messageContent .innerImage,
+  .messageContent .innerContent {
+    width: 100%;
+  }
+}
